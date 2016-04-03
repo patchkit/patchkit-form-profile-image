@@ -30,6 +30,8 @@ export default class ProfileSetup extends React.Component {
 
   submit(cb) {
     const canvas = this.refs.imageInputContainer.querySelector('canvas')
+    if (!canvas)
+      return cb()
     ImageUploader.canvasToPng(canvas, (err, buffer) => {
       if (err)
         return cb(err)
