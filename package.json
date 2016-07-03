@@ -22,6 +22,7 @@
   "dependencies": {
     "classnames": "^2.2.3",
     "patchkit-image-uploader": "^1.1.0",
+    "patchwork-translations": "^1.0.0",
     "react": "^0.14.6"
   },
   "devDependencies": {

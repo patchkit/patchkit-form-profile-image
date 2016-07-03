@@ -1,6 +1,7 @@
 import React from 'react'
 import cls from 'classnames'
 import ImageUploader from 'patchkit-image-uploader'
+import t from 'patchwork-translations'
 
 export default class ProfileSetup extends React.Component {  
   static propTypes = {
@@ -44,7 +45,7 @@ export default class ProfileSetup extends React.Component {
     const hasImg = !!currentValue || this.state.wasImageAdded
     const useVerticalCentering = !hasImg // dont vertically center if an image is assigned
     return <div className={cls(this.props.className, { 'vertical-center': useVerticalCentering })}>
-      <h1><span>Would you like to choose a picture?</span></h1>
+      <h1><span>{t('chooseProfilePicturePrompt')}</span></h1>
       <form className="block" onSubmit={e=>e.preventDefault()}>
         <fieldset>
           <div ref="imageInputContainer"><ImageUploader current={currentValue} onChange={this.onChangeImg.bind(this)} /></div>
