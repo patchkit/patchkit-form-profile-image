@@ -1,6 +1,6 @@
 {
   "name": "patchkit-form-profile-image",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Set a user image (modal form)",
   "main": "index.jsx",
   "scripts": {
